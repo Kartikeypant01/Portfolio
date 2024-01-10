@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d4895cddcd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+          <nav>
+            <img src="images/logo.png" alt="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#certifications">certifications</a></li>
+                <li><a href="#My-Work">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+          </nav>
+          <div class="header-text">
+            <p>UI/UX Designer</p>
+            <h1>Hi,I'm <span>Kartikey</span> <br>from Dehradun</h1>
+
+          </div>
+        </div>
+    </div>
+    <!------------------about--------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello! I am Kartikey, a passionate and dedicated student pursuing a Bachelor of Technology in Computer Science Engineering. I am deeply interested in exploring the world of technology and its endless possibilities.I am an enthusiastic learner, always eager to stay updated with the latest advancements in the field of computer science. I believe in the power of innovation and creativity and strive to apply these principles to my academic and personal projects,  and I am constantly seeking to enhance my skills in software development, web development, and data analysis. I am constantly seeking opportunities to expand my knowledge and skills in the field of computer science and look forward to making a positive impact in the tech industry.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>LANGUAGES</span><br>Java | Html | CSS | NodeJs  | MySQL</li>
+                            <li><span>INTERPERSONAL SKILLS</span><br>Team Leadership | Management & Coordination | Good Communication Skills | Versatile and Quick learner</li>
+                            <li><span>OTHERS</span><br>DBMS | Fundamentals Of Networking | Github</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Salesforce Administrator Virtual Internship</span><br>Salesforce Fundamental <br>Organizational Setup<br>Security<br> Reports and Dashboards <br>Data Management<br>Service cloud and Process Automation </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2017</span><br>High School<br>New Beersheba Sr Sec School<br>CGPA:10</li>
+                            <li><span>2019</span><br>Intermediate<br>Don Bosco Sr Sec School<br>Percentage:74.2%</li>
+                            <li><span>2020-2024</span><br>B.Tech CSE<br>DIT University Dehradun<br>CGPA:8.5</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--------------certifications----------->
+    <div id="certifications">
+        <div class="container">
+            <h1 class="sub-title">My certifications</h1>
+            <div class="certifications-list">
+                <div>
+                    <i class="fa-regular fa-snowflake"></i>
+                    <h2>Introduction to Software Engineering</h2>
+                    <a href="https://coursera.org/share/c780efcf20421a326d2fdc2ffeea9cab">Learn more</a>
+                
+                </div>
+                <div>
+                    <i class="fa-regular fa-snowflake"></i>
+                    <h2>Entrepreneurship Capstone </h2>
+                    <a href="https://coursera.org/share/30f4e3c314233b97504f08d347a86377">Learn more</a>
+                
+                </div>
+                <div>
+                    <i class="fa-regular fa-snowflake"></i>
+                    <h2>Fundamentals of Network Communication</h2>
+                    <a href="https://coursera.org/share/76687ed24f39ad3b5fd3ca68e26bc843">Learn more</a>
+                
+                </div>
+                <div>
+                    <i class="fa-regular fa-snowflake"></i>
+                    <h2>Introduction to Artificial Intelligence (AI)</h2>
+                    <a href="https://coursera.org/share/607e4f67915b4f8fe775c06eb1c291d3">Learn more</a>
+                
+                </div>
+                <div>
+                    <i class="fa-regular fa-snowflake"></i>
+                    <h2>Introduction to Data Science in Python</h2>
+                    <a href="https://coursera.org/share/96244fc8d47e14535c9bddc7e4a41016">Learn more</a>
+                
+                </div>
+                <div>
+                    <i class="fa-regular fa-snowflake"></i>
+                    <h2>Developing Innovative Ideas for New Companies: The First Step in Entrepreneurship</h2>
+                    <a href="https://coursera.org/share/c22b8260da5c7710628c444afb9b8334">Learn more</a>
+                
+                </div>
+                
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-----------My Work--------------->
+    <div id="My-Work">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+           <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png" >
+                <div class="layer">
+                    <h3>Pizza Shopping Application</h3>
+                    <p>This app is used for shopping Pizzas in which you can add item to cart and make payments(fake)</p>
+                    
+                    <a href="https://github.com/Kartikeypant01/Pizza_Shopping_Application"><i class="fa-solid fa-link"></i></a>
+                   
+                </div>
+            </div>
+            
+            <div class="work">
+                <img src="images/work-2.png" >
+                <div class="layer">
+                    <h3>Simple Chat Application</h3>
+                    <p>This is a simple chat application in which you can send and receive messages</p>
+                    <a href="https://github.com/Kartikeypant01/Project_simple_chat_application"><i class="fa-solid fa-link"></i></a>
+                    
+                </div>
+            </div>
+           
+           </div> 
+           <a href="#" class="btn">See more</a>
+        </div>
+
+    </div>
+    <!----------contact------------->
+    <div class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>kartikpant634@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>Call-7534891624</p>
+                    
+                    <p><i class="fa-brands fa-whatsapp"></i>Whatsapp-9760419996</p>
+                    
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/krtk_pant/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/kartikey-pant-044933240/"><i class="fa-brands fa-linkedin"></i></a>
+                       
+
+                    </div>
+                    <a href="images\kartikey_cv_pdf.pdf" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text"name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Sumbit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-solid fa-copyright"></i> @Kartikey Pant !! All Rights Reserved <i class="fa-solid fa-face-smile"></i> !! </p>
+        </div>
+    </div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+         function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+         }
+
+
+
+
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    <!-----------google sheet--------------->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyxjW2NyLPazk3eiY1GeebBmMOXVNj7Yija1SPcjOZOSRmlbOdDebXQQ236DoQ79vQB/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message Sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    
+</body>
+</html>
